@@ -1,3 +1,5 @@
+import random
+
 array = list(range(0,10))
 print("Esercizio 1",array[8:3:-1])
 def moltiplica(x,y):
@@ -42,3 +44,6 @@ set1 = {"red", "white", "green"}
 set1.add("black")
 set1.remove("red")
 print("Esercizio 8", set1, "\nC'è il bianco?" ,"white" in set1)
+
+even_random_numbers = [num for _ in range(10) if (num := random.randint(1, 100)) % 2 == 0]
+print("Esercizio 9", even_random_numbers)
